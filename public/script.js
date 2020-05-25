@@ -32,7 +32,7 @@ icon.play()
 function setWeatherData(data, place) {
   locationElement.textContent = place
   statusElement.textContent = data.summary
-  temperatureElement.textContent = Math.round(data.temperature) + "°"
+  temperatureElement.textContent = `${Math.round(data.temperature)}°`
   precipitationElement.textContent = `${data.precipProbability * 100}%`
   windElement.textContent = data.windSpeed
   icon.set('icon', data.icon)
